@@ -2,6 +2,7 @@
 <html lang="pl">
 <head>
 	<title>jQuery -Ćwiczenia git</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<meta charset="utf-8">
 	<script>
 		function pobierzNapis () {
@@ -13,5 +14,17 @@
 <body>
 	<div>Bardzo lubię programować</div>
 	<button onclick="pobierzNapis()">PRZYCISK</button>
+
+
+	<!-- Wykonanie w/w funkcji w jQuery-->
+	<div id="info">Aplikacja by Dejw 2021</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#info").click(function(){
+				var napis = $(this).html();
+				alert(napis);
+			})
+		})
+	</script> 
 </body>
 </html>
