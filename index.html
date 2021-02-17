@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-	<title></title>
+	<title>jQuery -Ćwiczenia git</title>
+	<meta charset="utf-8">
+	<script>
+		function pobierzNapis () {
+			var napis = document.getElementsByTagName("div")[0].innerHTML;
+			alert(napis);
+		}
+	</script>
 </head>
 <body>
-
+	<div>Bardzo lubię programować</div>
+	<button onclick="pobierzNapis()">PRZYCISK</button>
 </body>
 </html>
